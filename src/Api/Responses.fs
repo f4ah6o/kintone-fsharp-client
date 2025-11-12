@@ -51,6 +51,7 @@ type UpdateRecordsResponseBody = {
 
 /// Delete records response
 type DeleteRecordsResponseBody = {
+    _unit: unit
 } with interface IKintoneResponseBody
 
 /// Create cursor response
@@ -67,6 +68,7 @@ type GetRecordsByCursorResponseBody = {
 
 /// Delete cursor response
 type DeleteCursorResponseBody = {
+    _unit: unit
 } with interface IKintoneResponseBody
 
 /// Add record comment response
@@ -83,6 +85,7 @@ type GetRecordCommentsResponseBody = {
 
 /// Delete record comment response
 type DeleteRecordCommentResponseBody = {
+    _unit: unit
 } with interface IKintoneResponseBody
 
 /// Update record assignees response
@@ -186,6 +189,7 @@ type UpdateAppSettingsResponseBody = {
 
 /// Deploy app response
 type DeployAppResponseBody = {
+    _unit: unit
 } with interface IKintoneResponseBody
 
 /// Get deploy status response
@@ -264,6 +268,7 @@ type GetAppPluginsResponseBody = {
 
 /// Add app plugins response
 type AddAppPluginsResponseBody = {
+    _unit: unit
 } with interface IKintoneResponseBody
 
 // Space API Responses
@@ -293,6 +298,7 @@ type AddSpaceFromTemplateResponseBody = {
 
 /// Update space response
 type UpdateSpaceResponseBody = {
+    _unit: unit
 } with interface IKintoneResponseBody
 
 /// Get space members response
@@ -302,6 +308,7 @@ type GetSpaceMembersResponseBody = {
 
 /// Update space members response
 type UpdateSpaceMembersResponseBody = {
+    _unit: unit
 } with interface IKintoneResponseBody
 
 /// Add thread response
@@ -311,10 +318,12 @@ type AddThreadResponseBody = {
 
 /// Update thread response
 type UpdateThreadResponseBody = {
+    _unit: unit
 } with interface IKintoneResponseBody
 
 /// Add guests response
 type AddGuestsResponseBody = {
+    _unit: unit
 } with interface IKintoneResponseBody
 
 // File API Responses
@@ -344,6 +353,7 @@ type InstallPluginResponseBody = {
 
 /// Uninstall plugin response
 type UninstallPluginResponseBody = {
+    _unit: unit
 } with interface IKintoneResponseBody
 
 /// Update plugin response
