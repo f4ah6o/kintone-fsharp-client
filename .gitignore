@@ -5,3 +5,19 @@
 build
 
 .idea
+
+# .NET build artifacts
+bin/
+obj/
+*.user
+*.suo
+*.cache
+*.dll
+*.exe
+*.pdb
+*.nupkg
+.vs/
+
+# NuGet
+packages/
+*.lock.json
