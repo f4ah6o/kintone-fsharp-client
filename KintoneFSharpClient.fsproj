@@ -23,8 +23,8 @@
     <Compile Include="src/Model/Plugin.fs" />
     <Compile Include="src/Api/Requests.fs" />
     <Compile Include="src/Api/Responses.fs" />
-    <Compile Include="src/Client/Http.fs" />
     <Compile Include="src/Client/JsonSerialization.fs" />
+    <Compile Include="src/Client/Http.fs" />
     <Compile Include="src/Client/RecordClient.fs" />
     <Compile Include="src/Client/AppClient.fs" />
     <Compile Include="src/Client/SpaceClient.fs" />

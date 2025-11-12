@@ -18,7 +18,7 @@ module Record =
     }
 
     /// Add or update a field in the record
-    let putField fieldCode fieldValue record =
+    let putField fieldCode fieldValue (record: Record) : Record =
         { record with Fields = Map.add fieldCode fieldValue record.Fields }
 
     /// Get a field value by field code

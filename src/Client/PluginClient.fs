@@ -26,7 +26,7 @@ type PluginClient(internalClient: InternalClient) =
 
     /// Uninstall a plugin
     member this.UninstallPlugin(pluginId: string) : unit =
-        let request = {
+        let request: UninstallPluginRequest = {
             PluginId = pluginId
         }
         let _ = internalClient.Call<UninstallPluginRequest, UninstallPluginResponseBody>(HttpMethod.Delete, KintoneApi.UninstallPlugin, Some request)
