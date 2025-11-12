@@ -9,7 +9,7 @@ type AppClient(internalClient: InternalClient) =
 
     /// Get an app by ID
     member this.GetApp(appId: int64) : App =
-        let request = { Id = appId }
+        let request: GetAppRequest = { Id = appId }
         let response = internalClient.Call<GetAppRequest, GetAppResponseBody>(HttpMethod.Get, KintoneApi.GetApp, Some request)
         {
             AppId = response.AppId
@@ -26,13 +26,13 @@ type AppClient(internalClient: InternalClient) =
 
     /// Get multiple apps
     member this.GetApps(?ids: int64 list, ?codes: string list, ?name: string, ?spaceIds: int64 list, ?limit: int, ?offset: int) : App list =
-        let request = {
+        let request: GetAppsRequest = {
             Ids = ids
             Codes = codes
             Name = name
             SpaceIds = spaceIds
-            Limit = Option.defaultValue 100 limit
-            Offset = Option.defaultValue 0 offset
+            Limit = Some (Option.defaultValue 100 limit)
+            Offset = Some (Option.defaultValue 0 offset)
         }
         let response = internalClient.Call<GetAppsRequest, GetAppsResponseBody>(HttpMethod.Get, KintoneApi.GetApps, Some request)
         response.Apps
@@ -49,7 +49,7 @@ type AppClient(internalClient: InternalClient) =
 
     /// Get form fields
     member this.GetFormFields(app: int64, ?lang: string, ?preview: bool) : Map<string, FieldProperty> =
-        let request = {
+        let request: GetFormFieldsRequest = {
             App = app
             Lang = lang
             Preview = preview
@@ -59,7 +59,7 @@ type AppClient(internalClient: InternalClient) =
 
     /// Add form fields
     member this.AddFormFields(app: int64, properties: Map<string, FieldProperty>, ?revision: int64) : int64 =
-        let request = {
+        let request: AddFormFieldsRequest = {
             App = app
             Properties = properties
             Revision = revision
@@ -89,7 +89,7 @@ type AppClient(internalClient: InternalClient) =
 
     /// Get form layout
     member this.GetFormLayout(app: int64, ?preview: bool) : Layout list =
-        let request = {
+        let request: GetFormLayoutRequest = {
             App = app
             Preview = preview
         }
@@ -108,7 +108,7 @@ type AppClient(internalClient: InternalClient) =
 
     /// Get views
     member this.GetViews(app: int64, ?lang: string, ?preview: bool) : Map<string, View> =
-        let request = {
+        let request: GetViewsRequest = {
             App = app
             Lang = lang
             Preview = preview
@@ -128,7 +128,7 @@ type AppClient(internalClient: InternalClient) =
 
     /// Get app settings
     member this.GetAppSettings(app: int64, ?lang: string, ?preview: bool) : AppSettings =
-        let request = {
+        let request: GetAppSettingsRequest = {
             App = app
             Lang = lang
             Preview = preview
@@ -174,7 +174,7 @@ type AppClient(internalClient: InternalClient) =
 
     /// Get deploy status
     member this.GetDeployStatus(appIds: int64 list) : AppDeployStatus list =
-        let request = {
+        let request: GetDeployStatusRequest = {
             Apps = appIds
         }
         let response = internalClient.Call<GetDeployStatusRequest, GetDeployStatusResponseBody>(HttpMethod.Get, KintoneApi.GetDeployStatus, Some request)
@@ -182,7 +182,7 @@ type AppClient(internalClient: InternalClient) =
 
     /// Get app ACL
     member this.GetAppAcl(app: int64, ?preview: bool) : AppRightEntity list =
-        let request = {
+        let request: GetAppAclRequest = {
             App = app
             Preview = preview
         }
@@ -191,7 +191,7 @@ type AppClient(internalClient: InternalClient) =
 
     /// Update app ACL
     member this.UpdateAppAcl(app: int64, rights: AppRightEntity list, ?revision: int64) : int64 =
-        let request = {
+        let request: UpdateAppAclRequest = {
             App = app
             Rights = rights
             Revision = revision
@@ -201,7 +201,7 @@ type AppClient(internalClient: InternalClient) =
 
     /// Get record ACL
     member this.GetRecordAcl(app: int64, ?lang: string, ?preview: bool) : RecordRightEntity list =
-        let request = {
+        let request: GetRecordAclRequest = {
             App = app
             Lang = lang
             Preview = preview
@@ -211,7 +211,7 @@ type AppClient(internalClient: InternalClient) =
 
     /// Update record ACL
     member this.UpdateRecordAcl(app: int64, rights: RecordRightEntity list, ?revision: int64) : int64 =
-        let request = {
+        let request: UpdateRecordAclRequest = {
             App = app
             Rights = rights
             Revision = revision
@@ -230,7 +230,7 @@ type AppClient(internalClient: InternalClient) =
 
     /// Get field ACL
     member this.GetFieldAcl(app: int64, ?preview: bool) : FieldRight list =
-        let request = {
+        let request: GetFieldAclRequest = {
             App = app
             Preview = preview
         }

@@ -18,7 +18,7 @@ type RecordClient(internalClient: InternalClient) =
 
     /// Add multiple records to an app
     member this.AddRecords(app: int64, records: Record list) : int64 list =
-        let request = {
+        let request : AddRecordsRequest = {
             App = app
             Records = records
         }
@@ -93,7 +93,7 @@ type RecordClient(internalClient: InternalClient) =
 
     /// Update multiple records
     member this.UpdateRecords(app: int64, records: RecordForUpdate list) : RecordRevision list =
-        let request = {
+        let request : UpdateRecordsRequest = {
             App = app
             Records = records
         }
@@ -123,7 +123,7 @@ type RecordClient(internalClient: InternalClient) =
 
     /// Get records by cursor
     member this.GetRecordsByCursor(cursorId: string) : Record list * bool =
-        let request = {
+        let request : GetRecordsByCursorRequest = {
             Id = cursorId
         }
         let response = internalClient.Call<GetRecordsByCursorRequest, GetRecordsByCursorResponseBody>(HttpMethod.Get, KintoneApi.GetRecordsByCursor, Some request)
@@ -131,7 +131,7 @@ type RecordClient(internalClient: InternalClient) =
 
     /// Delete a cursor
     member this.DeleteCursor(cursorId: string) : unit =
-        let request = {
+        let request : DeleteCursorRequest = {
             Id = cursorId
         }
         let _ = internalClient.Call<DeleteCursorRequest, DeleteCursorResponseBody>(HttpMethod.Delete, KintoneApi.DeleteCursor, Some request)
@@ -139,7 +139,7 @@ type RecordClient(internalClient: InternalClient) =
 
     /// Add a comment to a record
     member this.AddRecordComment(app: int64, recordId: int64, comment: RecordComment) : int64 =
-        let request = {
+        let request : AddRecordCommentRequest = {
             App = app
             Record = recordId
             Comment = comment

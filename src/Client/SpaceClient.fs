@@ -9,7 +9,7 @@ type SpaceClient(internalClient: InternalClient) =
 
     /// Get a space by ID
     member this.GetSpace(spaceId: int64) : SpaceBody =
-        let request = { Id = spaceId }
+        let request: GetSpaceRequest = { Id = spaceId }
         let response = internalClient.Call<GetSpaceRequest, GetSpaceResponseBody>(HttpMethod.Get, KintoneApi.GetSpace, Some request)
         {
             Id = response.Id
@@ -53,7 +53,7 @@ type SpaceClient(internalClient: InternalClient) =
 
     /// Get space members
     member this.GetSpaceMembers(spaceId: int64) : SpaceMember list =
-        let request = { Id = spaceId }
+        let request: GetSpaceMembersRequest = { Id = spaceId }
         let response = internalClient.Call<GetSpaceMembersRequest, GetSpaceMembersResponseBody>(HttpMethod.Get, KintoneApi.GetSpaceMembers, Some request)
         response.Members
 

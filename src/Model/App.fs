@@ -253,7 +253,7 @@ type ProcessManagement = {
 type FieldAccessibility =
     | Readable
     | Writable
-    | None
+    | NoAccess
 
 /// Field right
 type FieldRight = {
@@ -302,7 +302,7 @@ type AdminNotes = {
 type CustomizeScope =
     | All
     | Admin
-    | None
+    | NoCustomization
 
 /// Customize type
 type CustomizeType =

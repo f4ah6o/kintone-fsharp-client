@@ -19,7 +19,7 @@ type FileClient(internalClient: InternalClient) =
 
     /// Download a file
     member this.DownloadFile(fileKey: string) : byte array * string =
-        let request = {
+        let request: DownloadFileRequest = {
             FileKey = fileKey
         }
         let response = internalClient.Call<DownloadFileRequest, DownloadFileResponseBody>(HttpMethod.Get, KintoneApi.DownloadFile, Some request)

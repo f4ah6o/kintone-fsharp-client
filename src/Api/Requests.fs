@@ -422,6 +422,13 @@ type UpdatePluginRequest = {
     PluginZip: byte array
 } with interface IKintoneRequest
 
+// Schema API Requests
+
+/// Empty request for APIs that don't need parameters
+type EmptyRequest = {
+    _dummy: unit option
+} with interface IKintoneRequest
+
 // Bulk requests
 
 /// Bulk requests request
