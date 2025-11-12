@@ -31,8 +31,8 @@ type AppClient(internalClient: InternalClient) =
             Codes = codes
             Name = name
             SpaceIds = spaceIds
-            Limit = Option.defaultValue 100 limit
-            Offset = Option.defaultValue 0 offset
+            Limit = Some (Option.defaultValue 100 limit)
+            Offset = Some (Option.defaultValue 0 offset)
         }
         let response = internalClient.Call<GetAppsRequest, GetAppsResponseBody>(HttpMethod.Get, KintoneApi.GetApps, Some request)
         response.Apps

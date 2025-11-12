@@ -58,7 +58,7 @@ type Guest = {
     Timezone: string option
     Locale: string option
     Name: string option
-    Surnamme: string option
+    Surname: string option
     GivenName: string option
     SurnameReading: string option
     GivenNameReading: string option
