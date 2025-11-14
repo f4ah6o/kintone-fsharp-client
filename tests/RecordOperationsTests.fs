@@ -49,7 +49,10 @@ module RecordOperationsTests =
         lazy (
             let final = validUpdates |> List.fold (fun acc (code, fv) ->
                 Record.putField code fv acc) record
-            validUpdates |> List.forall (fun (code, fv) ->
+            let expected =
+                validUpdates
+                |> List.fold (fun acc (code, fv) -> Map.add code fv acc) Map.empty
+            expected |> Map.forall (fun code fv ->
                 Record.getField code final = Some fv
             )
         )
@@ -63,7 +66,7 @@ module RecordOperationsTests =
     /// Property: getSingleLineText returns correct value for SingleLineText field
     [<Property(Arbitrary = [| typeof<CustomGenerators> |])>]
     let ``getSingleLineText returns value for SingleLineText field`` (fieldCode: string) (text: string) =
-        not (String.IsNullOrWhiteSpace fieldCode) && not (String.IsNullOrWhiteSpace text) ==>
+        (not (String.IsNullOrWhiteSpace fieldCode) && not (String.IsNullOrWhiteSpace text)) ==>
         lazy (
             let record = Record.empty |> Record.putField fieldCode (SingleLineText (Some text))
             Record.getSingleLineText fieldCode record = Some text
@@ -148,7 +151,7 @@ module RecordOperationsTests =
     /// Property: putField with same field code overwrites previous value
     [<Property(Arbitrary = [| typeof<CustomGenerators> |])>]
     let ``putField overwrites existing field`` (fieldCode: string) (value1: FieldValue) (value2: FieldValue) =
-        not (String.IsNullOrWhiteSpace fieldCode) && value1 <> value2 ==>
+        (not (String.IsNullOrWhiteSpace fieldCode) && value1 <> value2) ==>
         lazy (
             let record = Record.empty
                          |> Record.putField fieldCode value1
@@ -159,8 +162,8 @@ module RecordOperationsTests =
     /// Property: Record fields count increases with unique putField operations
     [<Property(Arbitrary = [| typeof<CustomGenerators> |])>]
     let ``putField increases field count for new fields`` (record: Record) (newField: string) (value: FieldValue) =
-        not (String.IsNullOrWhiteSpace newField) &&
-        not (record.Fields |> Map.containsKey newField) ==>
+        (not (String.IsNullOrWhiteSpace newField) &&
+        not (record.Fields |> Map.containsKey newField)) ==>
         lazy (
             let updated = Record.putField newField value record
             updated.Fields.Count = record.Fields.Count + 1
