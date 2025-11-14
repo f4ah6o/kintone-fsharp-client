@@ -3,6 +3,7 @@ namespace Kintone.Client
 open System
 open System.Text.Json
 open System.Text.Json.Serialization
+open FSharp.SystemTextJson
 open Kintone.Client.Model
 open Kintone.Client.Api
 
@@ -14,7 +15,7 @@ module JsonSerialization =
         let opts = JsonSerializerOptions()
         opts.PropertyNamingPolicy <- JsonNamingPolicy.CamelCase
         opts.DefaultIgnoreCondition <- JsonIgnoreCondition.WhenWritingNull
-        // opts.Converters.Add(JsonFSharpConverter())  // Commented out to avoid circular dependency
+        opts.Converters.Add(JsonFSharpConverter()) // Enable proper F# DU support (FieldValue, etc.)
         opts
 
     /// Serialize object to JSON string
