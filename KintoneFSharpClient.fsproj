@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
+    <TargetFramework>net9.0</TargetFramework>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <Version>3.0.0</Version>
     <Authors>Cybozu, Inc.</Authors>
@@ -15,6 +15,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="src/Generated/RestApiSpec.fs" />
     <Compile Include="src/Model/Common.fs" />
     <Compile Include="src/Model/FieldTypes.fs" />
     <Compile Include="src/Model/Record.fs" />

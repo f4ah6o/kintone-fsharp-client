@@ -19,10 +19,20 @@ jobs:
     - name: Setup .NET
       uses: actions/setup-dotnet@v4
       with:
-        dotnet-version: '8.0.x'
+        dotnet-version: |
+          9.0.x
+          8.0.x
 
     - name: Restore dependencies
       run: dotnet restore
+
+    - name: Sync OpenAPI artifacts
+      run: |
+        SPEC_VERSION=$(tr -d '\n' < openapi/kintone/version.txt)
+        dotnet run --project tools/SpecSync -- --version "$SPEC_VERSION"
+
+    - name: Ensure spec artifacts are committed
+      run: git diff --stat --exit-code
 
     - name: Build
       run: dotnet build --no-restore --configuration Release

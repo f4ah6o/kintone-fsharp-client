@@ -1,0 +1,1430 @@
+[
+  {
+    "operationId": "deleteGuests",
+    "method": "DELETE",
+    "path": "/k/v1/guests.json",
+    "status": "not-implemented",
+    "notes": null
+  },
+  {
+    "operationId": "deleteGuestsForGuestSpace",
+    "method": "DELETE",
+    "path": "/k/guest/{guestSpaceId}/v1/guests.json",
+    "status": "not-implemented",
+    "notes": null
+  },
+  {
+    "operationId": "deletePreviewAppFormFields",
+    "method": "DELETE",
+    "path": "/k/v1/preview/app/form/fields.json",
+    "status": "implemented",
+    "notes": null
+  },
+  {
+    "operationId": "deletePreviewAppFormFieldsForGuestSpace",
+    "method": "DELETE",
+    "path": "/k/guest/{guestSpaceId}/v1/preview/app/form/fields.json",
+    "status": "implemented",
+    "notes": null
+  },
+  {
+    "operationId": "deleteRecordComment",
+    "method": "DELETE",
+    "path": "/k/v1/record/comment.json",
+    "status": "implemented",
+    "notes": null
+  },
+  {
+    "operationId": "deleteRecordCommentForGuestSpace",
+    "method": "DELETE",
+    "path": "/k/guest/{guestSpaceId}/v1/record/comment.json",
+    "status": "implemented",
+    "notes": null
+  },
+  {
+    "operationId": "deleteRecords",
+    "method": "DELETE",
+    "path": "/k/v1/records.json",
+    "status": "implemented",
+    "notes": null
+  },
+  {
+    "operationId": "deleteRecordsCursor",
+    "method": "DELETE",
+    "path": "/k/v1/records/cursor.json",
+    "status": "implemented",
+    "notes": null
+  },
+  {
+    "operationId": "deleteRecordsCursorForGuestSpace",
+    "method": "DELETE",
+    "path": "/k/guest/{guestSpaceId}/v1/records/cursor.json",
+    "status": "implemented",
+    "notes": null
+  },
+  {
+    "operationId": "deleteRecordsForGuestSpace",
+    "method": "DELETE",
+    "path": "/k/guest/{guestSpaceId}/v1/records.json",
+    "status": "implemented",
+    "notes": null
+  },
+  {
+    "operationId": "deleteSpace",
+    "method": "DELETE",
+    "path": "/k/v1/space.json",
+    "status": "not-implemented",
+    "notes": null
+  },
+  {
+    "operationId": "deleteSpaceForGuestSpace",
+    "method": "DELETE",
+    "path": "/k/guest/{guestSpaceId}/v1/space.json",
+    "status": "not-implemented",
+    "notes": null
+  },
+  {
+    "operationId": "deployApp",
+    "method": "POST",
+    "path": "/k/v1/preview/app/deploy.json",
+    "status": "implemented",
+    "notes": null
+  },
+  {
+    "operationId": "deployAppForGuestSpace",
+    "method": "POST",
+    "path": "/k/guest/{guestSpaceId}/v1/preview/app/deploy.json",
+    "status": "implemented",
+    "notes": null
+  },
+  {
+    "operationId": "downloadFile",
+    "method": "GET",
+    "path": "/k/v1/file.json",
+    "status": "implemented",
+    "notes": null
+  },
+  {
+    "operationId": "downloadFileForGuestSpace",
+    "method": "GET",
+    "path": "/k/guest/{guestSpaceId}/v1/file.json",
+    "status": "implemented",
+    "notes": null
+  },
+  {
+    "operationId": "getApp",
+    "method": "GET",
+    "path": "/k/v1/app.json",
+    "status": "implemented",
+    "notes": null
+  },
+  {
+    "operationId": "getAppAcl",
+    "method": "GET",
+    "path": "/k/v1/app/acl.json",
+    "status": "implemented",
+    "notes": null
+  },
+  {
+    "operationId": "getAppAclForGuestSpace",
+    "method": "GET",
+    "path": "/k/guest/{guestSpaceId}/v1/app/acl.json",
+    "status": "implemented",
+    "notes": null
+  },
+  {
+    "operationId": "getAppActions",
+    "method": "GET",
+    "path": "/k/v1/app/actions.json",
+    "status": "not-implemented",
+    "notes": null
+  },
+  {
+    "operationId": "getAppActionsForGuestSpace",
+    "method": "GET",
+    "path": "/k/guest/{guestSpaceId}/v1/app/actions.json",
+    "status": "not-implemented",
+    "notes": null
+  },
+  {
+    "operationId": "getAppAdminNotes",
+    "method": "GET",
+    "path": "/k/v1/app/adminNotes.json",
+    "status": "not-implemented",
+    "notes": null
+  },
+  {
+    "operationId": "getAppAdminNotesForGuestSpace",
+    "method": "GET",
+    "path": "/k/guest/{guestSpaceId}/v1/app/adminNotes.json",
+    "status": "not-implemented",
+    "notes": null
+  },
+  {
+    "operationId": "getAppCustomize",
+    "method": "GET",
+    "path": "/k/v1/app/customize.json",
+    "status": "not-implemented",
+    "notes": null
+  },
+  {
+    "operationId": "getAppCustomizeForGuestSpace",
+    "method": "GET",
+    "path": "/k/guest/{guestSpaceId}/v1/app/customize.json",
+    "status": "not-implemented",
+    "notes": null
+  },
+  {
+    "operationId": "getAppForGuestSpace",
+    "method": "GET",
+    "path": "/k/guest/{guestSpaceId}/v1/app.json",
+    "status": "implemented",
+    "notes": null
+  },
+  {
+    "operationId": "getAppFormFields",
+    "method": "GET",
+    "path": "/k/v1/app/form/fields.json",
+    "status": "implemented",
+    "notes": null
+  },
+  {
+    "operationId": "getAppFormFieldsForGuestSpace",
+    "method": "GET",
+    "path": "/k/guest/{guestSpaceId}/v1/app/form/fields.json",
+    "status": "implemented",
+    "notes": null
+  },
+  {
+    "operationId": "getAppFormLayout",
+    "method": "GET",
+    "path": "/k/v1/app/form/layout.json",
+    "status": "implemented",
+    "notes": null
+  },
+  {
+    "operationId": "getAppFormLayoutForGuestSpace",
+    "method": "GET",
+    "path": "/k/guest/{guestSpaceId}/v1/app/form/layout.json",
+    "status": "implemented",
+    "notes": null
+  },
+  {
+    "operationId": "getAppNotificationsGeneral",
+    "method": "GET",
+    "path": "/k/v1/app/notifications/general.json",
+    "status": "not-implemented",
+    "notes": null
+  },
+  {
+    "operationId": "getAppNotificationsGeneralForGuestSpace",
+    "method": "GET",
+    "path": "/k/guest/{guestSpaceId}/v1/app/notifications/general.json",
+    "status": "not-implemented",
+    "notes": null
+  },
+  {
+    "operationId": "getAppNotificationsPerRecord",
+    "method": "GET",
+    "path": "/k/v1/app/notifications/perRecord.json",
+    "status": "not-implemented",
+    "notes": null
+  },
+  {
+    "operationId": "getAppNotificationsPerRecordForGuestSpace",
+    "method": "GET",
+    "path": "/k/guest/{guestSpaceId}/v1/app/notifications/perRecord.json",
+    "status": "not-implemented",
+    "notes": null
+  },
+  {
+    "operationId": "getAppNotificationsReminder",
+    "method": "GET",
+    "path": "/k/v1/app/notifications/reminder.json",
+    "status": "not-implemented",
+    "notes": null
+  },
+  {
+    "operationId": "getAppNotificationsReminderForGuestSpace",
+    "method": "GET",
+    "path": "/k/guest/{guestSpaceId}/v1/app/notifications/reminder.json",
+    "status": "not-implemented",
+    "notes": null
+  },
+  {
+    "operationId": "getAppPlugins",
+    "method": "GET",
+    "path": "/k/v1/app/plugins.json",
+    "status": "implemented",
+    "notes": null
+  },
+  {
+    "operationId": "getAppPluginsForGuestSpace",
+    "method": "GET",
+    "path": "/k/guest/{guestSpaceId}/v1/app/plugins.json",
+    "status": "implemented",
+    "notes": null
+  },
+  {
+    "operationId": "getAppReports",
+    "method": "GET",
+    "path": "/k/v1/app/reports.json",
+    "status": "not-implemented",
+    "notes": null
+  },
+  {
+    "operationId": "getAppReportsForGuestSpace",
+    "method": "GET",
+    "path": "/k/guest/{guestSpaceId}/v1/app/reports.json",
+    "status": "not-implemented",
+    "notes": null
+  },
+  {
+    "operationId": "getAppSettings",
+    "method": "GET",
+    "path": "/k/v1/app/settings.json",
+    "status": "implemented",
+    "notes": null
+  },
+  {
+    "operationId": "getAppSettingsForGuestSpace",
+    "method": "GET",
+    "path": "/k/guest/{guestSpaceId}/v1/app/settings.json",
+    "status": "implemented",
+    "notes": null
+  },
+  {
+    "operationId": "getAppStatus",
+    "method": "GET",
+    "path": "/k/v1/app/status.json",
+    "status": "not-implemented",
+    "notes": null
+  },
+  {
+    "operationId": "getAppStatusForGuestSpace",
+    "method": "GET",
+    "path": "/k/guest/{guestSpaceId}/v1/app/status.json",
+    "status": "not-implemented",
+    "notes": null
+  },
+  {
+    "operationId": "getAppViews",
+    "method": "GET",
+    "path": "/k/v1/app/views.json",
+    "status": "implemented",
+    "notes": null
+  },
+  {
+    "operationId": "getAppViewsForGuestSpace",
+    "method": "GET",
+    "path": "/k/guest/{guestSpaceId}/v1/app/views.json",
+    "status": "implemented",
+    "notes": null
+  },
+  {
+    "operationId": "getApps",
+    "method": "GET",
+    "path": "/k/v1/apps.json",
+    "status": "implemented",
+    "notes": null
+  },
+  {
+    "operationId": "getAppsForGuestSpace",
+    "method": "GET",
+    "path": "/k/guest/{guestSpaceId}/v1/apps.json",
+    "status": "implemented",
+    "notes": null
+  },
+  {
+    "operationId": "getAppsStatistics",
+    "method": "GET",
+    "path": "/k/v1/apps/statistics.json",
+    "status": "not-implemented",
+    "notes": null
+  },
+  {
+    "operationId": "getAppsStatisticsForGuestSpace",
+    "method": "GET",
+    "path": "/k/guest/{guestSpaceId}/v1/apps/statistics.json",
+    "status": "not-implemented",
+    "notes": null
+  },
+  {
+    "operationId": "getFieldAcl",
+    "method": "GET",
+    "path": "/k/v1/field/acl.json",
+    "status": "implemented",
+    "notes": null
+  },
+  {
+    "operationId": "getFieldAclForGuestSpace",
+    "method": "GET",
+    "path": "/k/guest/{guestSpaceId}/v1/field/acl.json",
+    "status": "implemented",
+    "notes": null
+  },
+  {
+    "operationId": "getForm",
+    "method": "GET",
+    "path": "/k/v1/form.json",
+    "status": "not-implemented",
+    "notes": null
+  },
+  {
+    "operationId": "getFormForGuestSpace",
+    "method": "GET",
+    "path": "/k/guest/{guestSpaceId}/v1/form.json",
+    "status": "not-implemented",
+    "notes": null
+  },
+  {
+    "operationId": "getPluginApps",
+    "method": "GET",
+    "path": "/k/v1/plugin/apps.json",
+    "status": "not-implemented",
+    "notes": null
+  },
+  {
+    "operationId": "getPluginAppsForGuestSpace",
+    "method": "GET",
+    "path": "/k/guest/{guestSpaceId}/v1/plugin/apps.json",
+    "status": "not-implemented",
+    "notes": null
+  },
+  {
+    "operationId": "getPlugins",
+    "method": "GET",
+    "path": "/k/v1/plugins.json",
+    "status": "implemented",
+    "notes": null
+  },
+  {
+    "operationId": "getPluginsForGuestSpace",
+    "method": "GET",
+    "path": "/k/guest/{guestSpaceId}/v1/plugins.json",
+    "status": "implemented",
+    "notes": null
+  },
+  {
+    "operationId": "getPluginsRequired",
+    "method": "GET",
+    "path": "/k/v1/plugins/required.json",
+    "status": "not-implemented",
+    "notes": null
+  },
+  {
+    "operationId": "getPluginsRequiredForGuestSpace",
+    "method": "GET",
+    "path": "/k/guest/{guestSpaceId}/v1/plugins/required.json",
+    "status": "not-implemented",
+    "notes": null
+  },
+  {
+    "operationId": "getPreviewAppAcl",
+    "method": "GET",
+    "path": "/k/v1/preview/app/acl.json",
+    "status": "not-implemented",
+    "notes": null
+  },
+  {
+    "operationId": "getPreviewAppAclForGuestSpace",
+    "method": "GET",
+    "path": "/k/guest/{guestSpaceId}/v1/preview/app/acl.json",
+    "status": "not-implemented",
+    "notes": null
+  },
+  {
+    "operationId": "getPreviewAppActions",
+    "method": "GET",
+    "path": "/k/v1/preview/app/actions.json",
+    "status": "not-implemented",
+    "notes": null
+  },
+  {
+    "operationId": "getPreviewAppActionsForGuestSpace",
+    "method": "GET",
+    "path": "/k/guest/{guestSpaceId}/v1/preview/app/actions.json",
+    "status": "not-implemented",
+    "notes": null
+  },
+  {
+    "operationId": "getPreviewAppAdminNotes",
+    "method": "GET",
+    "path": "/k/v1/preview/app/adminNotes.json",
+    "status": "not-implemented",
+    "notes": null
+  },
+  {
+    "operationId": "getPreviewAppAdminNotesForGuestSpace",
+    "method": "GET",
+    "path": "/k/guest/{guestSpaceId}/v1/preview/app/adminNotes.json",
+    "status": "not-implemented",
+    "notes": null
+  },
+  {
+    "operationId": "getPreviewAppCustomize",
+    "method": "GET",
+    "path": "/k/v1/preview/app/customize.json",
+    "status": "not-implemented",
+    "notes": null
+  },
+  {
+    "operationId": "getPreviewAppCustomizeForGuestSpace",
+    "method": "GET",
+    "path": "/k/guest/{guestSpaceId}/v1/preview/app/customize.json",
+    "status": "not-implemented",
+    "notes": null
+  },
+  {
+    "operationId": "getPreviewAppDeploy",
+    "method": "GET",
+    "path": "/k/v1/preview/app/deploy.json",
+    "status": "implemented",
+    "notes": null
+  },
+  {
+    "operationId": "getPreviewAppDeployForGuestSpace",
+    "method": "GET",
+    "path": "/k/guest/{guestSpaceId}/v1/preview/app/deploy.json",
+    "status": "implemented",
+    "notes": null
+  },
+  {
+    "operationId": "getPreviewAppFormFields",
+    "method": "GET",
+    "path": "/k/v1/preview/app/form/fields.json",
+    "status": "not-implemented",
+    "notes": null
+  },
+  {
+    "operationId": "getPreviewAppFormFieldsForGuestSpace",
+    "method": "GET",
+    "path": "/k/guest/{guestSpaceId}/v1/preview/app/form/fields.json",
+    "status": "not-implemented",
+    "notes": null
+  },
+  {
+    "operationId": "getPreviewAppFormLayout",
+    "method": "GET",
+    "path": "/k/v1/preview/app/form/layout.json",
+    "status": "not-implemented",
+    "notes": null
+  },
+  {
+    "operationId": "getPreviewAppFormLayoutForGuestSpace",
+    "method": "GET",
+    "path": "/k/guest/{guestSpaceId}/v1/preview/app/form/layout.json",
+    "status": "not-implemented",
+    "notes": null
+  },
+  {
+    "operationId": "getPreviewAppNotificationsGeneral",
+    "method": "GET",
+    "path": "/k/v1/preview/app/notifications/general.json",
+    "status": "not-implemented",
+    "notes": null
+  },
+  {
+    "operationId": "getPreviewAppNotificationsGeneralForGuestSpace",
+    "method": "GET",
+    "path": "/k/guest/{guestSpaceId}/v1/preview/app/notifications/general.json",
+    "status": "not-implemented",
+    "notes": null
+  },
+  {
+    "operationId": "getPreviewAppNotificationsPerRecord",
+    "method": "GET",
+    "path": "/k/v1/preview/app/notifications/perRecord.json",
+    "status": "not-implemented",
+    "notes": null
+  },
+  {
+    "operationId": "getPreviewAppNotificationsPerRecordForGuestSpace",
+    "method": "GET",
+    "path": "/k/guest/{guestSpaceId}/v1/preview/app/notifications/perRecord.json",
+    "status": "not-implemented",
+    "notes": null
+  },
+  {
+    "operationId": "getPreviewAppNotificationsReminder",
+    "method": "GET",
+    "path": "/k/v1/preview/app/notifications/reminder.json",
+    "status": "not-implemented",
+    "notes": null
+  },
+  {
+    "operationId": "getPreviewAppNotificationsReminderForGuestSpace",
+    "method": "GET",
+    "path": "/k/guest/{guestSpaceId}/v1/preview/app/notifications/reminder.json",
+    "status": "not-implemented",
+    "notes": null
+  },
+  {
+    "operationId": "getPreviewAppPlugins",
+    "method": "GET",
+    "path": "/k/v1/preview/app/plugins.json",
+    "status": "not-implemented",
+    "notes": null
+  },
+  {
+    "operationId": "getPreviewAppPluginsForGuestSpace",
+    "method": "GET",
+    "path": "/k/guest/{guestSpaceId}/v1/preview/app/plugins.json",
+    "status": "not-implemented",
+    "notes": null
+  },
+  {
+    "operationId": "getPreviewAppReports",
+    "method": "GET",
+    "path": "/k/v1/preview/app/reports.json",
+    "status": "not-implemented",
+    "notes": null
+  },
+  {
+    "operationId": "getPreviewAppReportsForGuestSpace",
+    "method": "GET",
+    "path": "/k/guest/{guestSpaceId}/v1/preview/app/reports.json",
+    "status": "not-implemented",
+    "notes": null
+  },
+  {
+    "operationId": "getPreviewAppSettings",
+    "method": "GET",
+    "path": "/k/v1/preview/app/settings.json",
+    "status": "not-implemented",
+    "notes": null
+  },
+  {
+    "operationId": "getPreviewAppSettingsForGuestSpace",
+    "method": "GET",
+    "path": "/k/guest/{guestSpaceId}/v1/preview/app/settings.json",
+    "status": "not-implemented",
+    "notes": null
+  },
+  {
+    "operationId": "getPreviewAppStatus",
+    "method": "GET",
+    "path": "/k/v1/preview/app/status.json",
+    "status": "not-implemented",
+    "notes": null
+  },
+  {
+    "operationId": "getPreviewAppStatusForGuestSpace",
+    "method": "GET",
+    "path": "/k/guest/{guestSpaceId}/v1/preview/app/status.json",
+    "status": "not-implemented",
+    "notes": null
+  },
+  {
+    "operationId": "getPreviewAppViews",
+    "method": "GET",
+    "path": "/k/v1/preview/app/views.json",
+    "status": "not-implemented",
+    "notes": null
+  },
+  {
+    "operationId": "getPreviewAppViewsForGuestSpace",
+    "method": "GET",
+    "path": "/k/guest/{guestSpaceId}/v1/preview/app/views.json",
+    "status": "not-implemented",
+    "notes": null
+  },
+  {
+    "operationId": "getPreviewFieldAcl",
+    "method": "GET",
+    "path": "/k/v1/preview/field/acl.json",
+    "status": "not-implemented",
+    "notes": null
+  },
+  {
+    "operationId": "getPreviewFieldAclForGuestSpace",
+    "method": "GET",
+    "path": "/k/guest/{guestSpaceId}/v1/preview/field/acl.json",
+    "status": "not-implemented",
+    "notes": null
+  },
+  {
+    "operationId": "getPreviewForm",
+    "method": "GET",
+    "path": "/k/v1/preview/form.json",
+    "status": "not-implemented",
+    "notes": null
+  },
+  {
+    "operationId": "getPreviewFormForGuestSpace",
+    "method": "GET",
+    "path": "/k/guest/{guestSpaceId}/v1/preview/form.json",
+    "status": "not-implemented",
+    "notes": null
+  },
+  {
+    "operationId": "getPreviewRecordAcl",
+    "method": "GET",
+    "path": "/k/v1/preview/record/acl.json",
+    "status": "not-implemented",
+    "notes": null
+  },
+  {
+    "operationId": "getPreviewRecordAclForGuestSpace",
+    "method": "GET",
+    "path": "/k/guest/{guestSpaceId}/v1/preview/record/acl.json",
+    "status": "not-implemented",
+    "notes": null
+  },
+  {
+    "operationId": "getRecord",
+    "method": "GET",
+    "path": "/k/v1/record.json",
+    "status": "implemented",
+    "notes": null
+  },
+  {
+    "operationId": "getRecordAcl",
+    "method": "GET",
+    "path": "/k/v1/record/acl.json",
+    "status": "implemented",
+    "notes": null
+  },
+  {
+    "operationId": "getRecordAclForGuestSpace",
+    "method": "GET",
+    "path": "/k/guest/{guestSpaceId}/v1/record/acl.json",
+    "status": "implemented",
+    "notes": null
+  },
+  {
+    "operationId": "getRecordComments",
+    "method": "GET",
+    "path": "/k/v1/record/comments.json",
+    "status": "implemented",
+    "notes": null
+  },
+  {
+    "operationId": "getRecordCommentsForGuestSpace",
+    "method": "GET",
+    "path": "/k/guest/{guestSpaceId}/v1/record/comments.json",
+    "status": "implemented",
+    "notes": null
+  },
+  {
+    "operationId": "getRecordForGuestSpace",
+    "method": "GET",
+    "path": "/k/guest/{guestSpaceId}/v1/record.json",
+    "status": "implemented",
+    "notes": null
+  },
+  {
+    "operationId": "getRecords",
+    "method": "GET",
+    "path": "/k/v1/records.json",
+    "status": "implemented",
+    "notes": null
+  },
+  {
+    "operationId": "getRecordsAclEvaluate",
+    "method": "GET",
+    "path": "/k/v1/records/acl/evaluate.json",
+    "status": "implemented",
+    "notes": null
+  },
+  {
+    "operationId": "getRecordsAclEvaluateForGuestSpace",
+    "method": "GET",
+    "path": "/k/guest/{guestSpaceId}/v1/records/acl/evaluate.json",
+    "status": "implemented",
+    "notes": null
+  },
+  {
+    "operationId": "getRecordsCursor",
+    "method": "GET",
+    "path": "/k/v1/records/cursor.json",
+    "status": "implemented",
+    "notes": null
+  },
+  {
+    "operationId": "getRecordsCursorForGuestSpace",
+    "method": "GET",
+    "path": "/k/guest/{guestSpaceId}/v1/records/cursor.json",
+    "status": "implemented",
+    "notes": null
+  },
+  {
+    "operationId": "getRecordsForGuestSpace",
+    "method": "GET",
+    "path": "/k/guest/{guestSpaceId}/v1/records.json",
+    "status": "implemented",
+    "notes": null
+  },
+  {
+    "operationId": "getSpace",
+    "method": "GET",
+    "path": "/k/v1/space.json",
+    "status": "implemented",
+    "notes": null
+  },
+  {
+    "operationId": "getSpaceForGuestSpace",
+    "method": "GET",
+    "path": "/k/guest/{guestSpaceId}/v1/space.json",
+    "status": "implemented",
+    "notes": null
+  },
+  {
+    "operationId": "getSpaceMembers",
+    "method": "GET",
+    "path": "/k/v1/space/members.json",
+    "status": "implemented",
+    "notes": null
+  },
+  {
+    "operationId": "getSpaceMembersForGuestSpace",
+    "method": "GET",
+    "path": "/k/guest/{guestSpaceId}/v1/space/members.json",
+    "status": "implemented",
+    "notes": null
+  },
+  {
+    "operationId": "getSpacesStatistics",
+    "method": "GET",
+    "path": "/k/v1/spaces/statistics.json",
+    "status": "not-implemented",
+    "notes": null
+  },
+  {
+    "operationId": "getSpacesStatisticsForGuestSpace",
+    "method": "GET",
+    "path": "/k/guest/{guestSpaceId}/v1/spaces/statistics.json",
+    "status": "not-implemented",
+    "notes": null
+  },
+  {
+    "operationId": "installPlugin",
+    "method": "POST",
+    "path": "/k/v1/plugin.json",
+    "status": "implemented",
+    "notes": null
+  },
+  {
+    "operationId": "installPluginForGuestSpace",
+    "method": "POST",
+    "path": "/k/guest/{guestSpaceId}/v1/plugin.json",
+    "status": "implemented",
+    "notes": null
+  },
+  {
+    "operationId": "postAppMove",
+    "method": "POST",
+    "path": "/k/v1/app/move.json",
+    "status": "not-implemented",
+    "notes": null
+  },
+  {
+    "operationId": "postAppMoveForGuestSpace",
+    "method": "POST",
+    "path": "/k/guest/{guestSpaceId}/v1/app/move.json",
+    "status": "not-implemented",
+    "notes": null
+  },
+  {
+    "operationId": "postBulkRequest",
+    "method": "POST",
+    "path": "/k/v1/bulkRequest.json",
+    "status": "not-implemented",
+    "notes": null
+  },
+  {
+    "operationId": "postBulkRequestForGuestSpace",
+    "method": "POST",
+    "path": "/k/guest/{guestSpaceId}/v1/bulkRequest.json",
+    "status": "not-implemented",
+    "notes": null
+  },
+  {
+    "operationId": "postGuests",
+    "method": "POST",
+    "path": "/k/v1/guests.json",
+    "status": "implemented",
+    "notes": null
+  },
+  {
+    "operationId": "postGuestsForGuestSpace",
+    "method": "POST",
+    "path": "/k/guest/{guestSpaceId}/v1/guests.json",
+    "status": "implemented",
+    "notes": null
+  },
+  {
+    "operationId": "postPreviewApp",
+    "method": "POST",
+    "path": "/k/v1/preview/app.json",
+    "status": "implemented",
+    "notes": null
+  },
+  {
+    "operationId": "postPreviewAppForGuestSpace",
+    "method": "POST",
+    "path": "/k/guest/{guestSpaceId}/v1/preview/app.json",
+    "status": "implemented",
+    "notes": null
+  },
+  {
+    "operationId": "postPreviewAppFormFields",
+    "method": "POST",
+    "path": "/k/v1/preview/app/form/fields.json",
+    "status": "implemented",
+    "notes": null
+  },
+  {
+    "operationId": "postPreviewAppFormFieldsForGuestSpace",
+    "method": "POST",
+    "path": "/k/guest/{guestSpaceId}/v1/preview/app/form/fields.json",
+    "status": "implemented",
+    "notes": null
+  },
+  {
+    "operationId": "postPreviewAppPlugins",
+    "method": "POST",
+    "path": "/k/v1/preview/app/plugins.json",
+    "status": "implemented",
+    "notes": null
+  },
+  {
+    "operationId": "postPreviewAppPluginsForGuestSpace",
+    "method": "POST",
+    "path": "/k/guest/{guestSpaceId}/v1/preview/app/plugins.json",
+    "status": "implemented",
+    "notes": null
+  },
+  {
+    "operationId": "postRecord",
+    "method": "POST",
+    "path": "/k/v1/record.json",
+    "status": "implemented",
+    "notes": null
+  },
+  {
+    "operationId": "postRecordComment",
+    "method": "POST",
+    "path": "/k/v1/record/comment.json",
+    "status": "implemented",
+    "notes": null
+  },
+  {
+    "operationId": "postRecordCommentForGuestSpace",
+    "method": "POST",
+    "path": "/k/guest/{guestSpaceId}/v1/record/comment.json",
+    "status": "implemented",
+    "notes": null
+  },
+  {
+    "operationId": "postRecordForGuestSpace",
+    "method": "POST",
+    "path": "/k/guest/{guestSpaceId}/v1/record.json",
+    "status": "implemented",
+    "notes": null
+  },
+  {
+    "operationId": "postRecords",
+    "method": "POST",
+    "path": "/k/v1/records.json",
+    "status": "implemented",
+    "notes": null
+  },
+  {
+    "operationId": "postRecordsCursor",
+    "method": "POST",
+    "path": "/k/v1/records/cursor.json",
+    "status": "implemented",
+    "notes": null
+  },
+  {
+    "operationId": "postRecordsCursorForGuestSpace",
+    "method": "POST",
+    "path": "/k/guest/{guestSpaceId}/v1/records/cursor.json",
+    "status": "implemented",
+    "notes": null
+  },
+  {
+    "operationId": "postRecordsForGuestSpace",
+    "method": "POST",
+    "path": "/k/guest/{guestSpaceId}/v1/records.json",
+    "status": "implemented",
+    "notes": null
+  },
+  {
+    "operationId": "postSpaceThread",
+    "method": "POST",
+    "path": "/k/v1/space/thread.json",
+    "status": "implemented",
+    "notes": null
+  },
+  {
+    "operationId": "postSpaceThreadComment",
+    "method": "POST",
+    "path": "/k/v1/space/thread/comment.json",
+    "status": "not-implemented",
+    "notes": null
+  },
+  {
+    "operationId": "postSpaceThreadCommentForGuestSpace",
+    "method": "POST",
+    "path": "/k/guest/{guestSpaceId}/v1/space/thread/comment.json",
+    "status": "not-implemented",
+    "notes": null
+  },
+  {
+    "operationId": "postSpaceThreadForGuestSpace",
+    "method": "POST",
+    "path": "/k/guest/{guestSpaceId}/v1/space/thread.json",
+    "status": "implemented",
+    "notes": null
+  },
+  {
+    "operationId": "postTemplateSpace",
+    "method": "POST",
+    "path": "/k/v1/template/space.json",
+    "status": "implemented",
+    "notes": null
+  },
+  {
+    "operationId": "postTemplateSpaceForGuestSpace",
+    "method": "POST",
+    "path": "/k/guest/{guestSpaceId}/v1/template/space.json",
+    "status": "implemented",
+    "notes": null
+  },
+  {
+    "operationId": "putAppAcl",
+    "method": "PUT",
+    "path": "/k/v1/app/acl.json",
+    "status": "not-implemented",
+    "notes": null
+  },
+  {
+    "operationId": "putAppAclForGuestSpace",
+    "method": "PUT",
+    "path": "/k/guest/{guestSpaceId}/v1/app/acl.json",
+    "status": "not-implemented",
+    "notes": null
+  },
+  {
+    "operationId": "putFieldAcl",
+    "method": "PUT",
+    "path": "/k/v1/field/acl.json",
+    "status": "not-implemented",
+    "notes": null
+  },
+  {
+    "operationId": "putFieldAclForGuestSpace",
+    "method": "PUT",
+    "path": "/k/guest/{guestSpaceId}/v1/field/acl.json",
+    "status": "not-implemented",
+    "notes": null
+  },
+  {
+    "operationId": "putPlugin",
+    "method": "PUT",
+    "path": "/k/v1/plugin.json",
+    "status": "implemented",
+    "notes": null
+  },
+  {
+    "operationId": "putPluginForGuestSpace",
+    "method": "PUT",
+    "path": "/k/guest/{guestSpaceId}/v1/plugin.json",
+    "status": "implemented",
+    "notes": null
+  },
+  {
+    "operationId": "putPreviewAppAcl",
+    "method": "PUT",
+    "path": "/k/v1/preview/app/acl.json",
+    "status": "implemented",
+    "notes": null
+  },
+  {
+    "operationId": "putPreviewAppAclForGuestSpace",
+    "method": "PUT",
+    "path": "/k/guest/{guestSpaceId}/v1/preview/app/acl.json",
+    "status": "implemented",
+    "notes": null
+  },
+  {
+    "operationId": "putPreviewAppActions",
+    "method": "PUT",
+    "path": "/k/v1/preview/app/actions.json",
+    "status": "not-implemented",
+    "notes": null
+  },
+  {
+    "operationId": "putPreviewAppActionsForGuestSpace",
+    "method": "PUT",
+    "path": "/k/guest/{guestSpaceId}/v1/preview/app/actions.json",
+    "status": "not-implemented",
+    "notes": null
+  },
+  {
+    "operationId": "putPreviewAppAdminNotes",
+    "method": "PUT",
+    "path": "/k/v1/preview/app/adminNotes.json",
+    "status": "not-implemented",
+    "notes": null
+  },
+  {
+    "operationId": "putPreviewAppAdminNotesForGuestSpace",
+    "method": "PUT",
+    "path": "/k/guest/{guestSpaceId}/v1/preview/app/adminNotes.json",
+    "status": "not-implemented",
+    "notes": null
+  },
+  {
+    "operationId": "putPreviewAppCustomize",
+    "method": "PUT",
+    "path": "/k/v1/preview/app/customize.json",
+    "status": "not-implemented",
+    "notes": null
+  },
+  {
+    "operationId": "putPreviewAppCustomizeForGuestSpace",
+    "method": "PUT",
+    "path": "/k/guest/{guestSpaceId}/v1/preview/app/customize.json",
+    "status": "not-implemented",
+    "notes": null
+  },
+  {
+    "operationId": "putPreviewAppFormFields",
+    "method": "PUT",
+    "path": "/k/v1/preview/app/form/fields.json",
+    "status": "implemented",
+    "notes": null
+  },
+  {
+    "operationId": "putPreviewAppFormFieldsForGuestSpace",
+    "method": "PUT",
+    "path": "/k/guest/{guestSpaceId}/v1/preview/app/form/fields.json",
+    "status": "implemented",
+    "notes": null
+  },
+  {
+    "operationId": "putPreviewAppFormLayout",
+    "method": "PUT",
+    "path": "/k/v1/preview/app/form/layout.json",
+    "status": "implemented",
+    "notes": null
+  },
+  {
+    "operationId": "putPreviewAppFormLayoutForGuestSpace",
+    "method": "PUT",
+    "path": "/k/guest/{guestSpaceId}/v1/preview/app/form/layout.json",
+    "status": "implemented",
+    "notes": null
+  },
+  {
+    "operationId": "putPreviewAppNotificationsGeneral",
+    "method": "PUT",
+    "path": "/k/v1/preview/app/notifications/general.json",
+    "status": "not-implemented",
+    "notes": null
+  },
+  {
+    "operationId": "putPreviewAppNotificationsGeneralForGuestSpace",
+    "method": "PUT",
+    "path": "/k/guest/{guestSpaceId}/v1/preview/app/notifications/general.json",
+    "status": "not-implemented",
+    "notes": null
+  },
+  {
+    "operationId": "putPreviewAppNotificationsPerRecord",
+    "method": "PUT",
+    "path": "/k/v1/preview/app/notifications/perRecord.json",
+    "status": "not-implemented",
+    "notes": null
+  },
+  {
+    "operationId": "putPreviewAppNotificationsPerRecordForGuestSpace",
+    "method": "PUT",
+    "path": "/k/guest/{guestSpaceId}/v1/preview/app/notifications/perRecord.json",
+    "status": "not-implemented",
+    "notes": null
+  },
+  {
+    "operationId": "putPreviewAppNotificationsReminder",
+    "method": "PUT",
+    "path": "/k/v1/preview/app/notifications/reminder.json",
+    "status": "not-implemented",
+    "notes": null
+  },
+  {
+    "operationId": "putPreviewAppNotificationsReminderForGuestSpace",
+    "method": "PUT",
+    "path": "/k/guest/{guestSpaceId}/v1/preview/app/notifications/reminder.json",
+    "status": "not-implemented",
+    "notes": null
+  },
+  {
+    "operationId": "putPreviewAppReports",
+    "method": "PUT",
+    "path": "/k/v1/preview/app/reports.json",
+    "status": "not-implemented",
+    "notes": null
+  },
+  {
+    "operationId": "putPreviewAppReportsForGuestSpace",
+    "method": "PUT",
+    "path": "/k/guest/{guestSpaceId}/v1/preview/app/reports.json",
+    "status": "not-implemented",
+    "notes": null
+  },
+  {
+    "operationId": "putPreviewAppSettings",
+    "method": "PUT",
+    "path": "/k/v1/preview/app/settings.json",
+    "status": "implemented",
+    "notes": null
+  },
+  {
+    "operationId": "putPreviewAppSettingsForGuestSpace",
+    "method": "PUT",
+    "path": "/k/guest/{guestSpaceId}/v1/preview/app/settings.json",
+    "status": "implemented",
+    "notes": null
+  },
+  {
+    "operationId": "putPreviewAppStatus",
+    "method": "PUT",
+    "path": "/k/v1/preview/app/status.json",
+    "status": "not-implemented",
+    "notes": null
+  },
+  {
+    "operationId": "putPreviewAppStatusForGuestSpace",
+    "method": "PUT",
+    "path": "/k/guest/{guestSpaceId}/v1/preview/app/status.json",
+    "status": "not-implemented",
+    "notes": null
+  },
+  {
+    "operationId": "putPreviewAppViews",
+    "method": "PUT",
+    "path": "/k/v1/preview/app/views.json",
+    "status": "implemented",
+    "notes": null
+  },
+  {
+    "operationId": "putPreviewAppViewsForGuestSpace",
+    "method": "PUT",
+    "path": "/k/guest/{guestSpaceId}/v1/preview/app/views.json",
+    "status": "implemented",
+    "notes": null
+  },
+  {
+    "operationId": "putPreviewFieldAcl",
+    "method": "PUT",
+    "path": "/k/v1/preview/field/acl.json",
+    "status": "implemented",
+    "notes": null
+  },
+  {
+    "operationId": "putPreviewFieldAclForGuestSpace",
+    "method": "PUT",
+    "path": "/k/guest/{guestSpaceId}/v1/preview/field/acl.json",
+    "status": "implemented",
+    "notes": null
+  },
+  {
+    "operationId": "putPreviewRecordAcl",
+    "method": "PUT",
+    "path": "/k/v1/preview/record/acl.json",
+    "status": "implemented",
+    "notes": null
+  },
+  {
+    "operationId": "putPreviewRecordAclForGuestSpace",
+    "method": "PUT",
+    "path": "/k/guest/{guestSpaceId}/v1/preview/record/acl.json",
+    "status": "implemented",
+    "notes": null
+  },
+  {
+    "operationId": "putRecord",
+    "method": "PUT",
+    "path": "/k/v1/record.json",
+    "status": "implemented",
+    "notes": null
+  },
+  {
+    "operationId": "putRecordAcl",
+    "method": "PUT",
+    "path": "/k/v1/record/acl.json",
+    "status": "not-implemented",
+    "notes": null
+  },
+  {
+    "operationId": "putRecordAclForGuestSpace",
+    "method": "PUT",
+    "path": "/k/guest/{guestSpaceId}/v1/record/acl.json",
+    "status": "not-implemented",
+    "notes": null
+  },
+  {
+    "operationId": "putRecordAssignees",
+    "method": "PUT",
+    "path": "/k/v1/record/assignees.json",
+    "status": "implemented",
+    "notes": null
+  },
+  {
+    "operationId": "putRecordAssigneesForGuestSpace",
+    "method": "PUT",
+    "path": "/k/guest/{guestSpaceId}/v1/record/assignees.json",
+    "status": "implemented",
+    "notes": null
+  },
+  {
+    "operationId": "putRecordForGuestSpace",
+    "method": "PUT",
+    "path": "/k/guest/{guestSpaceId}/v1/record.json",
+    "status": "implemented",
+    "notes": null
+  },
+  {
+    "operationId": "putRecordStatus",
+    "method": "PUT",
+    "path": "/k/v1/record/status.json",
+    "status": "implemented",
+    "notes": null
+  },
+  {
+    "operationId": "putRecordStatusForGuestSpace",
+    "method": "PUT",
+    "path": "/k/guest/{guestSpaceId}/v1/record/status.json",
+    "status": "implemented",
+    "notes": null
+  },
+  {
+    "operationId": "putRecords",
+    "method": "PUT",
+    "path": "/k/v1/records.json",
+    "status": "implemented",
+    "notes": null
+  },
+  {
+    "operationId": "putRecordsForGuestSpace",
+    "method": "PUT",
+    "path": "/k/guest/{guestSpaceId}/v1/records.json",
+    "status": "implemented",
+    "notes": null
+  },
+  {
+    "operationId": "putRecordsStatus",
+    "method": "PUT",
+    "path": "/k/v1/records/status.json",
+    "status": "implemented",
+    "notes": null
+  },
+  {
+    "operationId": "putRecordsStatusForGuestSpace",
+    "method": "PUT",
+    "path": "/k/guest/{guestSpaceId}/v1/records/status.json",
+    "status": "implemented",
+    "notes": null
+  },
+  {
+    "operationId": "putSpace",
+    "method": "PUT",
+    "path": "/k/v1/space.json",
+    "status": "not-implemented",
+    "notes": null
+  },
+  {
+    "operationId": "putSpaceBody",
+    "method": "PUT",
+    "path": "/k/v1/space/body.json",
+    "status": "implemented",
+    "notes": null
+  },
+  {
+    "operationId": "putSpaceBodyForGuestSpace",
+    "method": "PUT",
+    "path": "/k/guest/{guestSpaceId}/v1/space/body.json",
+    "status": "implemented",
+    "notes": null
+  },
+  {
+    "operationId": "putSpaceForGuestSpace",
+    "method": "PUT",
+    "path": "/k/guest/{guestSpaceId}/v1/space.json",
+    "status": "not-implemented",
+    "notes": null
+  },
+  {
+    "operationId": "putSpaceGuests",
+    "method": "PUT",
+    "path": "/k/v1/space/guests.json",
+    "status": "not-implemented",
+    "notes": null
+  },
+  {
+    "operationId": "putSpaceGuestsForGuestSpace",
+    "method": "PUT",
+    "path": "/k/guest/{guestSpaceId}/v1/space/guests.json",
+    "status": "not-implemented",
+    "notes": null
+  },
+  {
+    "operationId": "putSpaceMembers",
+    "method": "PUT",
+    "path": "/k/v1/space/members.json",
+    "status": "implemented",
+    "notes": null
+  },
+  {
+    "operationId": "putSpaceMembersForGuestSpace",
+    "method": "PUT",
+    "path": "/k/guest/{guestSpaceId}/v1/space/members.json",
+    "status": "implemented",
+    "notes": null
+  },
+  {
+    "operationId": "putSpaceThread",
+    "method": "PUT",
+    "path": "/k/v1/space/thread.json",
+    "status": "implemented",
+    "notes": null
+  },
+  {
+    "operationId": "putSpaceThreadForGuestSpace",
+    "method": "PUT",
+    "path": "/k/guest/{guestSpaceId}/v1/space/thread.json",
+    "status": "implemented",
+    "notes": null
+  },
+  {
+    "operationId": "uninstallPlugin",
+    "method": "DELETE",
+    "path": "/k/v1/plugin.json",
+    "status": "implemented",
+    "notes": null
+  },
+  {
+    "operationId": "uninstallPluginForGuestSpace",
+    "method": "DELETE",
+    "path": "/k/guest/{guestSpaceId}/v1/plugin.json",
+    "status": "implemented",
+    "notes": null
+  },
+  {
+    "operationId": "uploadFile",
+    "method": "POST",
+    "path": "/k/v1/file.json",
+    "status": "implemented",
+    "notes": null
+  },
+  {
+    "operationId": "uploadFileForGuestSpace",
+    "method": "POST",
+    "path": "/k/guest/{guestSpaceId}/v1/file.json",
+    "status": "implemented",
+    "notes": null
+  }
+]
