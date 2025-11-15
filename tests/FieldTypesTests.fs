@@ -226,8 +226,8 @@ module FieldTypesTests =
 
     /// Property: Date field only contains date component
     [<Property(Arbitrary = [| typeof<CustomGenerators> |])>]
-    let ``Date field focuses on date components`` (dt: DateTime) =
-        let dateOnly = DateTime(dt.Year, dt.Month, dt.Day)
+    let ``Date field focuses on date components`` (dt: System.DateTime) =
+        let dateOnly = System.DateTime(dt.Year, dt.Month, dt.Day)
         dateOnly.Year = dt.Year &&
         dateOnly.Month = dt.Month &&
         dateOnly.Day = dt.Day

@@ -140,6 +140,20 @@ let rec getAllRecords cursorId acc =
 let allRecords = getAllRecords cursorId []
 ```
 
+## Keeping Up With The OpenAPI Spec
+
+The upstream kintone REST API exposes an official OpenAPI specification. This repository now includes a helper tool that snapshots the spec and generates a simple summary module so that we can see what changed.
+
+```
+dotnet run --project tools/SpecSync
+```
+
+The command downloads the latest timestamp from [`kintone/rest-api-spec`](https://github.com/kintone/rest-api-spec), saves it under `openapi/kintone/<version>/`, refreshes `src/Generated/RestApiSpec.fs`, and updates `openapi/operation-coverage.json` (where each `operationId` is tagged as `implemented`, `not-implemented`, `planned`, or `deprecated`). See `docs/spec-sync.md` for the detailed workflow.
+
+`dotnet test` includes `OperationCoverageTests`, which fails if we forget to classify a new operation or if the coverage file drifts from the bundled spec.
+
+There is also a scheduled "Spec Watch" workflow that checks upstream once per day and files an Issue whenever a newer spec timestamp appears, so we get a reminder even if nobody runs the sync locally.
+
 ### App Settings
 
 ```fsharp
